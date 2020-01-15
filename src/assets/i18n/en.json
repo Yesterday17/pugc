@@ -1,0 +1,15 @@
+{
+  "MAIN": {
+    "SIDEBAR": {
+      "ADD": "Add",
+      "TRAFFIC": "Transfer Status",
+      "SETTINGS": "Settings",
+      "HELP": "Help"
+    }
+  },
+  "PAGES": {
+    "HOME": {
+      "TITLE": "App works !"
+    }
+  }
+}

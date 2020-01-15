@@ -1,0 +1,41 @@
+<mat-drawer-container class="pugc-full mat-typography" autosize>
+  <mat-drawer #drawer mode="side" disableClose="true" opened="true">
+    <button
+      mat-mini-fab
+      (click)="isExpanded = !isExpanded"
+      color="warn"
+      style="margin: 10px;"
+    >
+      <mat-icon aria-label="Menu">menu</mat-icon>
+    </button>
+
+    <mat-nav-list>
+      <!-- <mat-list-item>
+        <mat-icon mat-list-icon>add</mat-icon>
+        <h4 mat-line *ngIf="isExpanded">
+          {{ "MAIN.SIDEBAR.ADD" | translate }}
+        </h4>
+      </mat-list-item> -->
+      <mat-list-item>
+        <mat-icon mat-list-icon>import_export</mat-icon>
+        <h4 mat-line *ngIf="isExpanded">
+          {{ "MAIN.SIDEBAR.TRAFFIC" | translate }}
+        </h4>
+      </mat-list-item>
+      <mat-list-item [routerLink]="['setting']">
+        <mat-icon mat-list-icon>settings</mat-icon>
+        <h4 mat-line *ngIf="isExpanded">
+          {{ "MAIN.SIDEBAR.SETTINGS" | translate }}
+        </h4>
+      </mat-list-item>
+      <mat-list-item [routerLink]="['help']">
+        <mat-icon mat-list-icon>help</mat-icon>
+        <h4 mat-line *ngIf="isExpanded">
+          {{ "MAIN.SIDEBAR.HELP" | translate }}
+        </h4>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-drawer>
+
+  <router-outlet></router-outlet>
+</mat-drawer-container>

@@ -1,0 +1,15 @@
+{
+  "MAIN": {
+    "SIDEBAR": {
+      "ADD": "新建任务",
+      "TRAFFIC": "传输状态",
+      "SETTINGS": "设置",
+      "HELP": "帮助"
+    }
+  },
+  "PAGES": {
+    "HOME": {
+      "TITLE": "稳"
+    }
+  }
+}

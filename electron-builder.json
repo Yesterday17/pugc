@@ -1,0 +1,32 @@
+{
+  "productName": "pugc",
+  "directories": {
+    "output": "release/"
+  },
+  "files": [
+    "**/*",
+    "!**/*.ts",
+    "!*.code-workspace",
+    "!LICENSE.md",
+    "!package.json",
+    "!yarn.lock",
+    "!src/",
+    "!hooks/",
+    "!angular.json",
+    "!_config.yml",
+    "!tsconfig.json",
+    "!tslint.json"
+  ],
+  "win": {
+    "icon": "dist",
+    "target": ["portable"]
+  },
+  "mac": {
+    "icon": "dist",
+    "target": ["dmg"]
+  },
+  "linux": {
+    "icon": "dist",
+    "target": ["AppImage"]
+  }
+}
