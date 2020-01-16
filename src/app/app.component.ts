@@ -9,7 +9,7 @@ import { AppConfig } from "../environments/environment";
   styleUrls: ["./app.component.scss"]
 })
 export class AppComponent {
-  isExpanded: boolean = false;
+  isExpanded = false;
   constructor(
     public electronService: ElectronService,
     private translate: TranslateService
